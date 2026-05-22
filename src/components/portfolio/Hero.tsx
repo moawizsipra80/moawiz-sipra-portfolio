@@ -1,4 +1,6 @@
 import { ArrowRight, Mail } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
+
 
 export function Hero() {
   return (
