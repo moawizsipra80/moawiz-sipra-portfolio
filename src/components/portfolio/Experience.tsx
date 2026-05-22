@@ -26,7 +26,6 @@ const items = [
     period: "Side project",
     points: [
       "Creating tech content and developer videos",
-      "Sharing AI / web dev tutorials and walkthroughs",
     ],
   },
 ];
