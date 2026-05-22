@@ -3,40 +3,46 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "Quotation Maker Software",
+    desc: "My own product — a full quotation management tool for businesses to create, manage and export quotes.",
+    tech: ["React", "Node", "MongoDB"],
+    accent: "from-neon-purple to-neon-blue",
+    repo: "https://github.com/moawizsipra80/Quotation-Software.git",
+  },
+  {
+    title: "RAG-Based Chatbot",
+    desc: "Retrieval-augmented chatbot with vector search over custom documents and streaming LLM responses.",
+    tech: ["Python", "LangChain", "OpenAI", "FAISS"],
+    accent: "from-neon-blue to-neon-purple",
+    repo: "https://github.com/moawizsipra80/RAG_Based-Chatbot.git",
+  },
+  {
+    title: "Bitcoin Prediction System",
+    desc: "Machine learning pipeline for forecasting Bitcoin prices using time-series modeling.",
+    tech: ["Python", "Pandas", "Scikit-learn"],
+    accent: "from-neon-purple to-neon-blue",
+    repo: "https://github.com/moawizsipra80/Bitcoin-Prediction-System-Machine-Learning.git",
+  },
+  {
+    title: "Customer Chatbot",
+    desc: "Conversational AI assistant for customer support automation and FAQ handling.",
+    tech: ["Python", "NLP", "AI"],
+    accent: "from-neon-blue to-neon-purple",
+    repo: "https://github.com/moawizsipra80/Customer-chatbot.git",
+  },
+  {
+    title: "Liver Transplant Project",
+    desc: "Python-based medical analysis project for liver transplant data processing and insights.",
+    tech: ["Python", "Data Science", "ML"],
+    accent: "from-neon-purple to-neon-blue",
+    repo: "https://github.com/moawizsipra80/Liver-transplant-project-in-python.git",
+  },
+  {
     title: "Django E-commerce",
     desc: "Well-structured online store with cart, payments, admin panel and order management.",
     tech: ["Django", "Python", "PostgreSQL"],
-    accent: "from-neon-purple to-neon-blue",
-  },
-  {
-    title: "MERN Bookstore App",
-    desc: "Full-stack CRUD application with authentication, REST APIs and a polished React UI.",
-    tech: ["MongoDB", "Express", "React", "Node"],
     accent: "from-neon-blue to-neon-purple",
-  },
-  {
-    title: "RAG Chatbot",
-    desc: "PDF Q&A system with retrieval-augmented generation, vector search and streaming responses.",
-    tech: ["Python", "LangChain", "OpenAI", "FAISS"],
-    accent: "from-neon-purple to-neon-blue",
-  },
-  {
-    title: "AI Healthcare System",
-    desc: "Diagnosis assistant that combines ML models with a friendly conversational interface.",
-    tech: ["Python", "Scikit-learn", "Flask"],
-    accent: "from-neon-blue to-neon-purple",
-  },
-  {
-    title: "Bitcoin Price Prediction",
-    desc: "ML-based forecasting pipeline with time-series modeling and live dashboards.",
-    tech: ["Python", "Pandas", "TensorFlow"],
-    accent: "from-neon-purple to-neon-blue",
-  },
-  {
-    title: "Limiter App (Upwork)",
-    desc: "Deployed production app delivered as part of a client engagement on Upwork.",
-    tech: ["React", "Node", "MongoDB"],
-    accent: "from-neon-blue to-neon-purple",
+    repo: "https://github.com/moawizsipra80",
   },
 ];
 
@@ -76,11 +82,14 @@ export function Projects() {
                 ))}
               </div>
               <div className="flex gap-3 text-sm">
-                <a href="#" className="inline-flex items-center gap-1.5 text-neon-blue hover:text-foreground transition">
-                  <ExternalLink className="h-3.5 w-3.5" /> Demo
-                </a>
-                <a href="#" className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition">
-                  <Github className="h-3.5 w-3.5" /> Code
+                <a
+                  href={p.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-neon-blue hover:text-foreground transition"
+                >
+                  <Github className="h-3.5 w-3.5" /> View on GitHub
+                  <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>
             </div>
