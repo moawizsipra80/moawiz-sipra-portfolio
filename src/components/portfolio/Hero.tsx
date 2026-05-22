@@ -47,15 +47,14 @@ export function Hero() {
           <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <div className="relative mx-auto aspect-square max-w-md">
               <div className="absolute inset-0 rounded-full bg-gradient-primary blur-3xl opacity-40 animate-pulse-glow" />
-              <div className="relative h-full w-full rounded-full glass grid place-items-center animate-float">
+              <div className="relative h-full w-full rounded-full glass grid place-items-center animate-float overflow-hidden p-1.5">
                 <div className="absolute inset-4 rounded-full border border-neon-purple/30" />
                 <div className="absolute inset-10 rounded-full border border-neon-blue/30" />
-                <div className="text-center">
-                  <div className="text-7xl font-display font-bold text-gradient">MS</div>
-                  <div className="mt-2 font-mono text-xs text-muted-foreground">
-                    {"<developer />"}
-                  </div>
-                </div>
+                <img
+                  src={profileImg}
+                  alt="Muhammad Moawiz Sipra"
+                  className="h-full w-full rounded-full object-cover"
+                />
                 {/* Orbiting dots */}
                 <div className="absolute inset-0 animate-[spin_20s_linear_infinite]">
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 h-3 w-3 rounded-full bg-neon-blue glow-blue" />
